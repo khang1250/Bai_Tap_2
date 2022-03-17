@@ -17,7 +17,7 @@ public class DoorOpenFirst : MonoBehaviour
 
     IEnumerator CloseDoor()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         doorFX.Play();
         theDoor.GetComponent<Animator>().Play("DoorClose");
         this.GetComponent<BoxCollider>().enabled = true;
