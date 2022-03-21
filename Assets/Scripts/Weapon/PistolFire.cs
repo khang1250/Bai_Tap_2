@@ -24,10 +24,11 @@ public class PistolFire : MonoBehaviour
         isFiring = true;
         theGun.GetComponent<Animator>().Play("PistolFire");
         fireFlash.SetActive(true);
-        //gunFire.Play();
+        gunFire.Play();
         yield return new WaitForSeconds(0.05f);
         fireFlash.SetActive(false);
         yield return new WaitForSeconds(0.45f);
         isFiring=false;
+        theGun.GetComponent<Animator>().Play("New State");
     }
 }
