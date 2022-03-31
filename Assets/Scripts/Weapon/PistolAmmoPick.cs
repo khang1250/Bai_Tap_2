@@ -11,5 +11,6 @@ public class PistolAmmoPick : MonoBehaviour
     {
         fakeAmmoClip.SetActive(false);
         ammoPickUpSound.Play();
+        GlobalAmmo.pistolAmmo += 15;
     }
 }
